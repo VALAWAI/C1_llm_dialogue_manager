@@ -1,0 +1,48 @@
+asyncapi: 2.5.0
+
+info:
+  title: VALAWAI C1 LLM Dialogue Manager
+  version: 0.0.1
+
+channels:
+  valawai.c0.text-interface:
+    subscribe:
+      description: Receive text from the component.
+      message:
+        $ref: "#/components/messages/textMessage"
+    publish:
+      description: Send text to the component.
+      message:
+        $ref: "#/components/messages/textMessage"
+  valawai.c2.observations.reflections:
+    publish:
+      description: Add a reflection about the dialogue.
+      message:
+        $ref: "#/components/messages/observationMessage"
+
+components:
+  messages:
+    textMessage:
+      payload:
+        type: object
+        properties:
+          version:
+            type: string
+          speaker:
+            type: string
+          text:
+            type: string
+          timestamp:
+            type: string
+            format: date-time
+    observationMessage:
+      payload:
+        type: object
+        properties:
+          version:
+            type: string
+          text:
+            type: string
+          timestamp:
+            type: string
+            format: date-time
