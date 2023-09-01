@@ -17,7 +17,7 @@ These reflections are used together with the current conversation history and th
 The component can be customised with the identifier for the character impersonated by the dialogue manager.
 
 The component runs in a _Docker_ container, and communicates with a _RabbitMQ_ message broker.
-As a large language model it supports _OpenAi_ chat models; in the future, support will be added for the _HuggingFace_ models.
+As a large language model it supports _OpenAI_ chat models; in the future, support will be added for the _HuggingFace_ models.
 
 ## Data Flow
 
@@ -70,4 +70,4 @@ The component is configurable with the following environment variables, with the
 - SPEAKER (_AI_) The identifier for the participant in the dialogue.
 - MODEL_NAME (`gpt-3.5-turbo`) The name of the model to use.
 - PROMPT (None) The prompt to use for the response generation, if not provided a default prompt is used.
-- OPENAI_API_KEY (None) The API key for the OpenAi services.
+- OPENAI_API_KEY (None) The API key for the OpenAI services.
