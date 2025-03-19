@@ -71,3 +71,5 @@ The component is configurable with the following environment variables, with the
 - MODEL_NAME (`gpt-3.5-turbo`) The name of the model to use.
 - PROMPT (None) The prompt to use for the response generation, if not provided a default prompt is used.
 - OPENAI_API_KEY (None) The API key for the OpenAI services.
+
+Disclaimer: this software is still being developed and will undergo major changes.
